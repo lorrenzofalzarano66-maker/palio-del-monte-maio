@@ -4,9 +4,233 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Il Palio del Monte Maio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #f5f1e8;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      min-height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+                  url('https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero {
+      max-width: 900px;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      margin: 10px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: #c89b3c;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #a57d2f;
+    }
+
+    .btn-secondary {
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+    }
+
+    .btn-secondary:hover {
+      background: white;
+      color: black;
+    }
+
+    section {
+      padding: 70px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+      color: #5a1f1f;
+    }
+
+    .section-text {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 40px;
+      font-size: 1.05rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 14px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: #7a1e1e;
+    }
+
+    .programma {
+      background: #fff;
+    }
+
+    .programma ul {
+      max-width: 700px;
+      margin: 0 auto;
+      list-style: none;
+      padding: 0;
+    }
+
+    .programma li {
+      background: #f9f4ea;
+      margin-bottom: 15px;
+      padding: 18px 20px;
+      border-left: 6px solid #c89b3c;
+      border-radius: 8px;
+    }
+
+    .cta {
+      background: #5a1f1f;
+      color: white;
+      text-align: center;
+    }
+
+    .cta h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+    }
+
+    footer {
+      background: #1d1d1d;
+      color: #ddd;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.4rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Il Palio del Monte Maio</h1>
-  <p>Benvenuti nella pagina ufficiale del Palio del Monte Maio.</p>
+
+  <header>
+    <div class="hero">
+      <h1>Il Palio del Monte Maio</h1>
+      <p>
+        Una celebrazione di tradizione, identità, storia e spirito di comunità.
+        Vivi l’emozione di un evento unico nel cuore del territorio.
+      </p>
+      <a href="#evento" class="btn btn-primary">Scopri l'evento</a>
+      <a href="#programma" class="btn btn-secondary">Vedi il programma</a>
+    </div>
+  </header>
+
+  <section id="evento">
+    <div class="container">
+      <h2 class="section-title">L'evento</h2>
+      <p class="section-text">
+        Il Palio del Monte Maio nasce per valorizzare il territorio, la memoria,
+        le tradizioni popolari e il senso di appartenenza della comunità.
+        Una giornata speciale fatta di passione, incontro e partecipazione.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Tradizione</h3>
+          <p>Un appuntamento che richiama storia, cultura locale e identità del territorio.</p>
+        </div>
+        <div class="card">
+          <h3>Comunità</h3>
+          <p>Un’occasione per stare insieme, condividere emozioni e rafforzare i legami tra persone.</p>
+        </div>
+        <div class="card">
+          <h3>Spettacolo</h3>
+          <p>Una manifestazione coinvolgente, pensata per emozionare partecipanti e visitatori.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="programma" class="programma">
+    <div class="container">
+      <h2 class="section-title">Programma</h2>
+      <ul>
+        <li><strong>Ore 10:00</strong> — Apertura ufficiale dell’evento</li>
+        <li><strong>Ore 11:30</strong> — Presentazione delle squadre / contrade</li>
+        <li><strong>Ore 15:30</strong> — Inizio delle gare e delle attività principali</li>
+        <li><strong>Ore 18:30</strong> — Premiazione finale</li>
+        <li><strong>Ore 20:00</strong> — Chiusura con musica, festa e saluti</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Partecipa al Palio del Monte Maio</h2>
+      <p>Scopri il programma completo e vivi una giornata di festa, tradizione e passione.</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Il Palio del Monte Maio - Tutti i diritti riservati
+  </footer>
+
 </body>
 </html>
