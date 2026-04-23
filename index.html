@@ -20,58 +20,65 @@
 
     header {
       min-height: 100vh;
-      background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
-            url('front%20page%20il%20palio%202026.jpeg');
+      background:
+        linear-gradient(rgba(0,0,0,0.15), rgba(0,0,0,0.15)),
+        url('front%20page%20il%20palio%202026.jpeg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      color: white;
       display: flex;
-      align-items: center;
+      align-items: flex-end;
       justify-content: center;
-      text-align: center;
-      padding: 20px;
+      padding: 30px 20px 50px;
     }
 
     .hero {
-      max-width: 900px;
+      width: 100%;
+      max-width: 1000px;
+      background: transparent;
+      padding: 0;
+      margin: 0 auto;
+      box-shadow: none;
+      border-radius: 0;
     }
 
-    .hero h1 {
-      font-size: 3.5rem;
-      margin-bottom: 20px;
-      letter-spacing: 1px;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: 0 auto 30px;
+    .hero-buttons {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 780px;
+      max-width: 90%;
+      margin: 0 auto 20px auto;
+      gap: 20px;
     }
 
     .btn {
       display: inline-block;
       padding: 14px 28px;
-      margin: 10px;
-      border-radius: 8px;
+      border-radius: 10px;
       text-decoration: none;
       font-weight: bold;
+      font-size: 1.05rem;
       transition: 0.3s;
+      text-align: center;
+      min-width: 210px;
     }
 
     .btn-primary {
       background: #c89b3c;
       color: white;
+      border: 2px solid #c89b3c;
     }
 
     .btn-primary:hover {
       background: #a57d2f;
+      border-color: #a57d2f;
     }
 
     .btn-secondary {
-      background: transparent;
-      border: 2px solid white;
+      background: rgba(255,255,255,0.08);
       color: white;
+      border: 2px solid white;
     }
 
     .btn-secondary:hover {
@@ -159,12 +166,19 @@
     }
 
     @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 2.4rem;
+      header {
+        padding: 20px 15px 35px;
       }
 
-      .hero p {
-        font-size: 1rem;
+      .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+        max-width: 320px;
+      }
+
+      .btn {
+        width: 100%;
+        min-width: 0;
       }
     }
   </style>
@@ -173,13 +187,10 @@
 
   <header>
     <div class="hero">
-      <h1>Il Palio del Monte Maio</h1>
-      <p>
-        Una celebrazione di tradizione, identità, storia e spirito di comunità.
-        Vivi l’emozione di un evento unico nel cuore del territorio.
-      </p>
-      <a href="#evento" class="btn btn-primary">Scopri l'evento</a>
-      <a href="#programma" class="btn btn-secondary">Vedi il programma</a>
+      <div class="hero-buttons">
+        <a href="#evento" class="btn btn-primary">Scopri l'evento</a>
+        <a href="#programma" class="btn btn-secondary">Vedi il programma</a>
+      </div>
     </div>
   </header>
 
