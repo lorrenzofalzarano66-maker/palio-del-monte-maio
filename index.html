@@ -198,37 +198,40 @@
   }
 
   .hero {
-    flex-direction: column;
-    text-align: center;
-    gap: 28px;
-  }
+  position: relative;
+  max-width: 1400px;
+  margin: 0 auto;
+}
 
-  .hero-left,
-  .hero-right {
-    width: 100%;
-    max-width: 100%;
-  }
+.hero-img {
+  width: 100%;
+  display: block;
+}
 
-  .hero img,
-  .hero-left img,
-  .hero-right img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-  }
+.desktop-img {
+  display: none;
+}
 
-  .hero-buttons {
-    flex-direction: column;
-    width: 100%;
-    max-width: 320px;
-    margin: 25px auto 0;
-  }
+.mobile-img {
+  display: block;
+  width: 100%;
+}
 
-  .btn {
-    width: 100%;
-    min-width: 0;
-  }
+.hero-buttons {
+  position: static;
+  transform: none;
+  flex-direction: column;
+  width: 100%;
+  max-width: 320px;
+  margin: 20px auto 0;
+  gap: 14px;
+  padding: 0 16px 20px;
+}
+
+.btn {
+  width: 100%;
+  min-width: 0;
+}
 
   .section-title {
     font-size: 2rem;
@@ -267,13 +270,16 @@
 <body>
 
   <header>
-    <div class="hero">
-      <div class="hero-buttons">
-        <a href="#evento" class="btn btn-primary">Scopri l'evento</a>
-        <a href="#programma" class="btn btn-secondary">Vedi il programma</a>
-      </div>
+  <div class="hero">
+    <img src="front page il palio 2026.jpeg" alt="Palio del Monte Maio" class="hero-img desktop-img">
+    <img src="PALIO MONTEMAIOMOBILE.png" alt="Palio del Monte Maio mobile" class="hero-img mobile-img">
+
+    <div class="hero-buttons">
+      <a href="#evento" class="btn btn-primary">Scopri l'evento</a>
+      <a href="#programma" class="btn btn-secondary">Vedi il programma</a>
     </div>
-  </header>
+  </div>
+</header>
 
   <section id="evento">
     <div class="container">
