@@ -193,21 +193,75 @@
     color: #fff;
 }
     @media (max-width: 768px) {
-      header {
-        padding: 20px 15px 35px;
-      }
+  header {
+    padding: 20px 15px 35px;
+  }
 
-      .hero-buttons {
-        flex-direction: column;
-        width: 100%;
-        max-width: 320px;
-      }
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    gap: 28px;
+  }
 
-      .btn {
-        width: 100%;
-        min-width: 0;
-      }
-    }
+  .hero-left,
+  .hero-right {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero img,
+  .hero-left img,
+  .hero-right img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+    margin: 25px auto 0;
+  }
+
+  .btn {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-text {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .programma-poster img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .cta {
+    padding: 60px 18px;
+  }
+
+  .cta h2 {
+    font-size: 1.9rem;
+  }
+
+  .cta p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+}
   </style>
 </head>
 <body>
