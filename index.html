@@ -29,17 +29,32 @@
 
     .hero {
       width: 100%;
-      max-width: 1000px;
-      background: transparent;
-      padding: 0;
-      margin: 0 auto;
-      box-shadow: none;
-      border-radius: 0;
+  max-width: 1100px;
+  background: transparent;
+  padding: 0;
+  margin: 0 auto;
+  box-shadow: none;
+  border-radius: 0;
+  text-align: center;
     }
+.hero-img {
+  display: block;
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  margin: 0 auto;
+}
 
+.desktop-img {
+  display: block;
+}
+
+.mobile-img {
+  display: none;
+}
     .hero-buttons {
-  display: flex;
-  justify-content:center;
+   display: flex;
+  justify-content: center;
   align-items: center;
   width: 760px;
   max-width: 90%;
@@ -57,9 +72,6 @@
       transition: 0.3s;
       text-align: center;
       min-width: 210px;
-    }
-    .hero-buttons .btn:last-child {
-     transform: translateX(12px);
     }
 
     .btn-primary {
@@ -177,7 +189,7 @@
   font-weight: 500;
 }
 
-    .programma {
+.programma {
   background: #fff; 
   margin-top: -35px;
   padding-top: 10px;
@@ -192,7 +204,7 @@
 } 
   .programma-poster {
   text-align: center;
-  margin-top: -12PX;
+  margin-top: -12px;
 }
  .programma-poster img {
   max-width: 100%;
@@ -259,8 +271,11 @@
 }
 
 .hero-img {
-  width: 100%;
   display: block;
+  width: 100%;
+  max-width: 1100px;
+  height: auto;
+  margin: 0 auto;
 }
 
 .desktop-img {
@@ -333,6 +348,7 @@
   line-height: 1.75;
   color: #5a3a1e;
   }
+   }   
   </style>
 </head>
 <body>
